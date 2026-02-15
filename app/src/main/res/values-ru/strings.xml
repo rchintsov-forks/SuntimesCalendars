@@ -5,6 +5,12 @@
     <string name="textSize_normal">Средний</string>
     <string name="textSize_large">Крупный</string>
     <string name="textSize_xlarge">Огромный</string>
+    <string-array name="textSize_display">                      <!-- one-to-one with textSize_values -->
+        <item>@string/textSize_small</item>
+        <item>@string/textSize_normal</item>
+        <item>@string/textSize_large</item>
+        <item>@string/textSize_xlarge</item>
+    </string-array>
 
     <string name="timeMode_noon">Солнечный полдень</string>
     <string name="sunrise">Восход солнца</string>
