@@ -82,7 +82,7 @@
     <string name="configLabel_options">Параметры</string>
     <string name="configLabel_calendars_location">Местоположение</string>
 
-    <string name="calendar_solstice_displayName">Солнцестояние и равноденствие</string>
+    <string name="calendar_solstice_displayName">Солнцестояния и равноденствия</string>
     <string name="calendar_solstice_summary">Солнцестояния, равноденствия и межсезонные дни</string>
     <string name="calendar_moonPhase_displayName">Фазы луны</string>
     <string name="calendar_moonPhase_summary">Синодический месяц</string>
@@ -100,14 +100,14 @@
     <string name="calendar_gold_twilight_summary" />
     <string name="calendar_blue_twilight_displayName">Режимное время</string>
     <string name="calendar_blue_twilight_summary" />
-    <string name="calendar_daylight_displayName">Световой день</string>
+    <string name="calendar_daylight_displayName">Положения солнца</string>
     <string name="calendar_daylight_summary">Восход и заход солнца, солнечный полдень</string>
 
     <string name="configLabel_calendars_enabled">Интеграция в систему</string>
-    <string name="configLabel_calendars_enabled_summary">Добавлять отмеченные события в календарь системы (в виде отдельных календарей)</string>
+    <string name="configLabel_calendars_enabled_summary">Добавлять отмеченные категории событий в календарь системы (в виде отдельных календарей)</string>
 
-    <string name="configLabel_calendars_window">Окно календаря</string>
-    <string name="configLabel_calendars_window_summary">Период, начинающийся <xliff:g id="calendars_window_display" example="one year ago">%1$s</xliff:g>, заканчивающийся <xliff:g id="calendars_window_display" example="one year from now">%2$s</xliff:g></string>
+    <string name="configLabel_calendars_window">Период событий</string>
+    <string name="configLabel_calendars_window_summary">Период заполнения календаря. Начинается <xliff:g id="calendars_window_display" example="one year ago">%1$s</xliff:g> и заканчивается <xliff:g id="calendars_window_display" example="one year from now">%2$s</xliff:g></string>
 
     <string name="configLabel_calendars_window0">Окно (начало)</string>
     <string name="configLabel_calendars_window0_summary">Период, начинающийся <xliff:g id="calendars_window_display" example="one year">%s</xliff:g> назад</string>
@@ -141,7 +141,7 @@
     <string name="dialog_cancel">Отменить</string>
 
     <string name="action_help">Справка</string>
-    <string name="action_openCalendar">Открыть</string>            <!-- snackbar version -->
+    <string name="action_openCalendar">Открыть календарь</string>            <!-- snackbar version -->
     <string name="action_openCalendar1">Открыть календарь</string>  <!-- actionbar version -->
 
     <string name="action_deleteReminder">Удалить</string>    <!-- ImageButton content-description -->
@@ -321,33 +321,33 @@
 
     <string name="help_flags"><![CDATA[
         <h3>Выбор событий</h3>
-        Эти настройки применяются для изменения списка частных событий в календаре общего события.
+        Эти настройки применяются для изменения списка частных событий в календаре (общей категории).
         <br/><br/>
-        Чтобы изменить список частных событий, отметьте нужные события галочками (утро, вечер, восход, заход и др.).
-        <br/>
-        Затем перейдите на главный экран, снимите галочку с общего события и поставьте ее заново. Это удалит календарь события в системе и добавит его заново.
-        <br/>
-        Не забудьте активировать <b>Интеграция в систему</b> перед применением изменений.
+        Чтобы изменить список событий в календаре, отметьте нужные события галочками (утро, вечер, восход, заход и др.).
+        <br/><br/>
+        Затем перейдите на главный экран, снимите галочку с календаря (общей категории) и поставьте ее заново. Это удалит выбранный календарь из системы и добавит его заново.
+        <br/><br/>
+        Не забудьте активировать пункт <b>«Интеграция в систему»</b> перед проведением изменений.
     ]]></string>
 
     <string name="help_template"><![CDATA[
         <h3>Шаблоны</h3>
-        Шаблоны применяются для форматирования частных событий календаря.
+        Шаблоны применяются для форматирования частных событий в календаре.
         <br/><br/>
         Чтобы изменить форматирование событий календаря, измените его шаблон, используя символы подстановки (ниже).
-        <br/>
-        Затем перейдите на главный экран, снимите галочку с общего события и поставьте ее заново. Это удалит календарь события в системе и добавит его заново.
-        <br/>
-        Не забудьте активировать <b>Интеграция в систему</b> перед применением изменений.
+        <br/><br/>
+        Затем перейдите на главный экран, снимите галочку с календаря (общей категории) и поставьте ее заново. Это удалит выбранный календарь из системы и добавит его заново.
+        <br/><br/>
+        Не забудьте активировать пункт <b>«Интеграция в систему»</b> перед проведением изменений.
         <br/><br/>
         <h3>Символы подстановки:</h3>
         %s
     ]]></string>=
     <string name="help_template_strings"><![CDATA[
         <h3>Строки событий</h3>
-        Перечисленные частные события доступны в шаблоне общего события через символ подстановки %M.
-        <br/>
-        Вы можете переименовать частные события по своему усмотрению.
+        Перечисленные частные события доступны в шаблоне календаря (общей категории) через символ подстановки %M.
+        <br/><br/>
+        Вы можете переименовывать частные события по своему усмотрению.
     ]]></string>
 
     <string name="color_dialog_msg">Цвет</string>
@@ -382,15 +382,15 @@
         <h1>Местоположение</h1>
         Местоположение настраивается в приложении Suntimes и используется для добавления событий.
         <br/><br/>
-        Чтобы изменить местоположение для общего события, сначала измените местоположение в основном приложении Suntimes, а затем замените календарь события в этом приложении.
-        <br/>
-        Чтобы сделать это, перейдите на главный экран, снимите галочку с общего события и поставьте ее заново. Это удалит календарь события в системе и добавит его заново.
-        <br/>
-        Не забудьте активировать <b>Интеграция в систему</b> перед применением изменений.
+        Чтобы изменить местоположение для календаря (общей категории), сначала измените местоположение в основном приложении Suntimes, а затем замените календарь события в этом приложении.
+        <br/><br/>
+        Чтобы заменить, перейдите на главный экран, снимите галочку с календаря (общей категории) и поставьте ее заново. Это удалит календарь события в системе и добавит его заново.
+        <br/><br/>
+        Не забудьте активировать пункт <b>«Интеграция в систему»</b> перед проведением изменений.
     ]]></string>
 
     <string name="app_version"><![CDATA[<b>Версия:</b>]]> <xliff:g id="versionString">%s</xliff:g></string>
-    <string name="app_shortdesc">Астрономические события для календаря Android</string>
+    <string name="app_shortdesc">Астрономические события для календаря Android.</string>
     <string name="app_support_url"><![CDATA[
         <b>Поддержка</b>: посетите
         <a href="https://github.com/forrestguice/SuntimesCalendars/issues">трекер отслеживания проблем</a> на GitHub для создания запроса.
@@ -399,7 +399,7 @@
         <a href="https://forrestguice.github.io/Suntimes/">forrestguice.github.io/Suntimes</a>
     ]]></xliff:g></string>
     <string name="app_donate_url"><![CDATA[
-        %s доступно бесплатно. Но если оно оказалось для вас полезным, пожалуйста,
+        Приложение %s доступно бесплатно. Но если оно оказалось для вас полезным, пожалуйста,
         <a href="https://forrestguice.github.io/Suntimes/donate">поддержите проект любой суммой</a>.
     ]]></string>
     <string name="app_legal1"><![CDATA[
