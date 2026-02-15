@@ -106,7 +106,7 @@
     <string name="calendar_gold_twilight_summary" />
     <string name="calendar_blue_twilight_displayName">Режимное время</string>
     <string name="calendar_blue_twilight_summary" />
-    <string name="calendar_daylight_displayName">Положения солнца</string>
+    <string name="calendar_daylight_displayName">Солнце</string>
     <string name="calendar_daylight_summary">Восход и заход солнца, солнечный полдень</string>
 
     <string name="configLabel_calendars_enabled">Интеграция в систему</string>
